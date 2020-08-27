@@ -1,9 +1,11 @@
 from flask import Flask,request,render_template
 import pickle
-from gensim import utils
-import gensim.parsing.preprocessing as gsp
 import spacy
 import numpy as np
+import nltk
+from nltk import word_tokenize, sent_tokenize
+from nltk.corpus import stopwords
+import re, string, unicodedata
 
 
 
